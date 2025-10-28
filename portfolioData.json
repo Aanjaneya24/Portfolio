@@ -1,0 +1,107 @@
+{
+  "name": "Aanjaneya Pandey",
+  "location": "New Delhi, India",
+  "contact": {
+    "phone": "8299376784",
+    "email": "pandeyaanjaneya76@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/aanjaneya-pandey-9715b2335/",
+    "github": "https://github.com/Aanjaneya24",
+    "leetcode": "https://leetcode.com/u/Aanjaneya24/"
+  },
+  "education": [
+    {
+      "institution": "National Institute of Technology Delhi",
+      "location": "New Delhi, India",
+      "degree": "B.Tech in Electronics and Communication Engineering with Minor in AI & ML",
+      "cgpa": "9.0/10",
+      "year": "Graduating 2027"
+    },
+    {
+      "institution": "Ewing Christian Public School",
+      "location": "Prayagraj",
+      "degree": "Senior Secondary",
+      "percentage": "91%",
+      "year": "Completed 2022"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Embedded Software & Systems Engineering Intern",
+      "organization": "IIT (BHU) Varanasi",
+      "duration": "June 2025 – July 2025",
+      "department": "Department of Computer Science and Engineering",
+      "link": "https://github.com/Aanjaneya24/Research_Internship_IITBHU",
+      "points": [
+        "Engineered a secure IoT communication stack (LoRaWAN on nRF54L15 & SX1261), improving network efficiency by 30%.",
+        "Built low-level drivers in C (Zephyr RTOS) and integrated with APIs, enhancing system reliability by 20%.",
+        "Applied secure authentication (OTAA) and optimized data transmission, extending wireless coverage beyond 500m.",
+        "Reduced system power usage by 15% and improved scalability through iterative configuration tuning.",
+        "Designed a novel data transmission protocol and implemented validation setups across macOS, Windows, and Linux."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "EduTrack",
+      "tech": ["MongoDB", "Express.js", "React.js", "Node.js"],
+      "github": "https://github.com/Aanjaneya24/EduTrack-Smart-School-Management-System",
+      "description": [
+        "Developed a scalable MERN application to manage student attendance, performance, and feedback.",
+        "Implemented role-based access control (RBAC) and secure REST APIs with authentication.",
+        "Created interactive dashboards and data visualizations, serving 100+ students."
+      ]
+    },
+    {
+      "name": "Smart Inventory Tracker",
+      "tech": ["Python", "Machine Learning", "IoT", "Sensor Networks"],
+      "github": "https://github.com/Aanjaneya24/Smart_Inventory_Tracker",
+      "description": [
+        "Programmed predictive ML models for inventory restocking, increasing forecast accuracy by 15%.",
+        "Configured event notifications via MQTT and validated inputs from 50+ IoT sensors.",
+        "Crafted a testing framework to ensure data reliability and system performance."
+      ]
+    },
+    {
+      "name": "Smart Sched",
+      "tech": ["MongoDB", "Express.js", "React.js", "Node.js"],
+      "github": "https://github.com/Aanjaneya24/SmartSched",
+      "description": [
+        "Devised a scalable task management app for 100+ users, improving productivity and tracking efficiency.",
+        "Enhanced UI/UX with interactive dashboards and seamless backend API integration.",
+        "Constructed and validated 30+ workflows, ensuring reliability, maintainability, and smooth data operations."
+      ]
+    }
+  ],
+  "technical_skills": {
+    "programming_languages": ["C", "C++", "Python", "JavaScript"],
+    "web_technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "Tailwind CSS"],
+    "tools": ["Docker", "Git/GitHub", "Postman", "VS Code", "Zephyr RTOS", "Numpy", "Pandas", "Matplotlib", "MATLAB", "CPT"],
+    "soft_skills": ["Time Management", "Leadership", "Teamwork", "Effective Communication", "Strong Presentation"],
+    "coursework": ["OOPS", "Data Structure and Algorithms", "Computer Networks", "Operating Systems", "DBMS", "AI/ML"]
+  },
+  "achievements": [
+    "Solved 400+ DSA problems on LeetCode and GeeksforGeeks, strengthening algorithms and coding skills.",
+    "Semifinalist in Flipkart GRiD 7.0 after clearing two coding rounds.",
+    "Advanced through two rounds of the Adobe Hackathon, showcasing strong problem-solving skills.",
+    "Secured 10.0 SGPA in first year of B.Tech, reflecting strong academic foundation.",
+    "Achieved 98.6 percentile in JEE Mains (Top 1.4% of 1M+ candidates)."
+  ],
+  "positions_of_responsibility": [
+    {
+      "organization": "Think India Club | NIT Delhi",
+      "role": "Active Member",
+      "points": [
+        "Organized and led 5+ seminars and technical discussions, engaging 50+ participants.",
+        "Collaborated with peers to conduct technical workshops and events, improving teamwork and hands-on learning."
+      ]
+    },
+    {
+      "organization": "Technical Club | NIT Delhi",
+      "role": "Active Member",
+      "points": [
+        "Contributed to technical projects and coding events, fostering peer-to-peer learning and innovation.",
+        "Assisted in organizing hackathons and coding challenges, enhancing problem-solving culture among students."
+      ]
+    }
+  ]
+}
