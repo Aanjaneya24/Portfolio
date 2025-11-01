@@ -99,7 +99,7 @@ export const projects = [
       { icon: FaReact, color: "#61DAFB" },  // React.js
       { icon: SiNodedotjs, color: "#339933" },  // Node.js
     ],
-    link: "https://github.com/Aanjaneya24/EduTrack-Smart-School-Management-System",
+    link: "https://edu-track-iota.vercel.app",
   },
   {
     id: 2,
