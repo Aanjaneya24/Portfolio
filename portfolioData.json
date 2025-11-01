@@ -42,13 +42,15 @@
   ],
   "projects": [
     {
-      "name": "EduTrack",
-      "tech": ["MongoDB", "Express.js", "React.js", "Node.js"],
-      "github": "https://github.com/Aanjaneya24/EduTrack-Smart-School-Management-System",
+      "name": "EduTrack - School Management System",
+      "tech": ["MongoDB", "Express.js", "React.js", "Node.js", "Material-UI", "Redux"],
+      "github": "https://github.com/Aanjaneya24/EduTrack",
+      "live": "https://edu-track-iota.vercel.app",
       "description": [
-        "Developed a scalable MERN application to manage student attendance, performance, and feedback.",
-        "Implemented role-based access control (RBAC) and secure REST APIs with authentication.",
-        "Created interactive dashboards and data visualizations, serving 100+ students."
+        "Built a comprehensive MERN stack school management platform with role-based access for Admins, Teachers, and Students.",
+        "Implemented attendance tracking, grade management, and real-time analytics with interactive dashboards and data visualizations.",
+        "Deployed production-ready application on Vercel (frontend) and Render (backend) with MongoDB Atlas integration.",
+        "Developed secure authentication system with guest demo access for portfolio showcase."
       ]
     },
     {
