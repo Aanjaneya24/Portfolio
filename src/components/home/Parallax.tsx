@@ -254,7 +254,9 @@ const Parallax = () => {
           />
           
         </div>
-        {/* <p className={`${spaceGrotesk.className} text-[10px] xs:text-xs sm:text-sm md:text-lg text-white/80 mt-0 mb-4 mx-auto tracking-wide font-light`}>Actively seeking Software Developer roles</p> */}
+        <p className={`${spaceGrotesk.className} text-sm xs:text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 mx-auto tracking-wide font-light`}>
+          AI-Driven Developer | Building Tomorrow's Technology
+        </p>
         <div className="flex justify-center gap-6">
           <motion.a
             href="https://github.com/Aanjaneya24"

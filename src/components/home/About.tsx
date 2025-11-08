@@ -139,7 +139,7 @@ export default function About() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Embedded Systems & Software Developer
+              Software and AI Developer 
             </motion.h3>
 
             <motion.p 
@@ -148,29 +148,47 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              I&apos;m a passionate B.Tech student in Electronics and Communication Engineering 
-              with a Minor in AI & ML from NIT Delhi. I specialize in embedded systems, 
-              IoT development, and full-stack applications. I&apos;m dedicated to building 
-              innovative and scalable solutions that bridge hardware and software.
+              I&apos;m a passionate B.Tech student at NIT Delhi specializing in Software Development and Artificial Intelligence,
+              with a keen interest in embedded systems and intelligent automation.
+              I focus on designing data-driven, efficient, and scalable applications that merge innovation with real-world use.
+              Curious and driven, I aim to create smart technologies that connect AI, code, and meaningful impact.
             </motion.p>
 
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
+            <motion.div
+              className="flex flex-wrap gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Get in Touch
-              <motion.span
-                animate={{ x: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
+              <motion.a
+                href="/FAI_RES.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:from-violet-500 hover:to-purple-500 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                →
-              </motion.span>
-            </motion.a>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Resume
+              </motion.a>
+
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
+              >
+                Get in Touch
+                <motion.span
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  →
+                </motion.span>
+              </motion.a>
+            </motion.div>
           </motion.div>
         </div>
       </div>

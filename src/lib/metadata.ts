@@ -52,19 +52,19 @@ export const generateMetadata = (path: string): Metadata => {
 
 export const experiences = [
   {
-    title: "Embedded Software & Systems Engineering Intern",
-    company: "IIT (BHU) Varanasi",
+    title: "Embedded Systems & AI Research Intern",
+    company: "IIT (BHU), Varanasi",
     location: "Varanasi, India",
-    type: "Internship",
+    type: "Research Internship",
     date: "June 2025 – July 2025",
     department: "Department of Computer Science and Engineering",
     link: "https://github.com/Aanjaneya24/Research_Internship_IITBHU",
     points: [
       "Engineered a secure IoT communication stack (LoRaWAN on nRF54L15 & SX1261), improving network efficiency by 30%.",
-      "Built low-level drivers in C (Zephyr RTOS) and integrated with APIs, enhancing system reliability by 20%.",
-      "Applied secure authentication (OTAA) and optimized data transmission, extending wireless coverage beyond 500m.",
-      "Reduced system power usage by 15% and improved scalability through iterative configuration tuning.",
-      "Designed a novel data transmission protocol and implemented validation setups across macOS, Windows, and Linux."
+      "Developed and optimized low-level drivers in C (Zephyr RTOS) and integrated with APIs, enhancing system reliability by 20%.",
+      "Architected secure OTAA-based authentication and optimized transmission algorithms, extending wireless range beyond 500m.",
+      "Applied principles of software optimization and algorithmic efficiency to embedded systems development, improving scalability and performance.",
+      "Designed a novel data transmission protocol and devised validation setups across macOS, Windows, and Linux."
     ],
     skills: ["C", "Zephyr RTOS", "LoRaWAN", "IoT", "Embedded Systems", "nRF54L15", "SX1261"],
   },
@@ -130,11 +130,11 @@ export const projects = [
 ];
 
 export const achievements = [
-  "Solved 400+ DSA problems on LeetCode and GeeksforGeeks, strengthening algorithms and coding skills.",
-  "Semifinalist in Flipkart GRiD 7.0 after clearing two coding rounds.",
-  "Advanced through two rounds of the Adobe Hackathon, showcasing strong problem-solving skills.",
-  "Secured 10.0 SGPA in first year of B.Tech, reflecting strong academic foundation.",
-  "Achieved 98.6 percentile in JEE Mains (Top 1.4% of 1M+ candidates)."
+  "Solved 400+ DSA problems on LeetCode and GeeksforGeeks, enhancing analytical and coding skills.",
+  "Cleared two coding rounds of Flipkart GRiD 7.0 and shortlisted as a semifinalist.",
+  "Advanced through two rounds of the Adobe Hackathon, showcasing algorithmic and problem-solving ability.",
+  "Secured a perfect 10.0 SGPA in the first year of B.Tech, reflecting academic excellence and consistency.",
+  "Achieved 98.6 percentile in JEE Mains (Top 1.4% of 1M+ candidates), demonstrating strong quantitative skills."
 ];
 
 export const positions = [

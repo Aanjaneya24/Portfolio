@@ -18,6 +18,7 @@ interface Project {
   id: number;
   title: string;
   des: string;
+  highlights?: string[];
   img: string;
   icons: ProjectIcon[];
   link: string;
@@ -78,7 +79,7 @@ export function AllProjects(): JSX.Element {
               onClick={() => handleProjectClick(project.link)}
             >
               <CardContainer>
-                <CardBody className="relative w-full h-[420px] bg-white dark:bg-neutral-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 flex flex-col group/card hover:border-purple-500/50 transition-colors">
+                <CardBody className="relative w-full h-auto bg-white dark:bg-neutral-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 flex flex-col group/card hover:border-purple-500/50 transition-colors">
                   <CardItem
                     translateZ="30"
                     className="text-lg font-semibold text-neutral-900 dark:text-white mb-1.5 h-[62px] line-clamp-2"
@@ -92,6 +93,20 @@ export function AllProjects(): JSX.Element {
                   >
                     {project.des}
                   </CardItem>
+                  {project.highlights && project.highlights.length > 0 && (
+                    <CardItem
+                      as="div"
+                      translateZ="30"
+                      className="w-full mb-4 space-y-2"
+                    >
+                      {project.highlights.map((highlight: string, idx: number) => (
+                        <div key={idx} className="text-xs text-neutral-600 dark:text-neutral-300 flex items-start gap-2">
+                          <span className="text-violet-600 dark:text-violet-400 font-bold mt-0.5">•</span>
+                          <span>{highlight}</span>
+                        </div>
+                      ))}
+                    </CardItem>
+                  )}
                   <CardItem 
                     translateZ="50" 
                     className="w-full h-[200px] mb-4"
