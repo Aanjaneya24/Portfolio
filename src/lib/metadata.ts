@@ -92,7 +92,7 @@ export const projects = [
     id: 1,
     title: "HireSense - AI-Powered Recruitment Platform",
     des: "Developed an intelligent recruitment platform leveraging AI for automated candidate screening, resume parsing, and skill matching with secure authentication and role-based access control.",
-    img: "images/projects/hiresense.png",
+    img: "images/projects/hiresense.jpg",
     icons: [
       { icon: SiMongodb, color: "#47A248" },  // MongoDB
       { icon: SiExpress, color: "#000000" },  // Express.js
