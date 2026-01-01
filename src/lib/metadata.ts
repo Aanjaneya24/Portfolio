@@ -90,6 +90,19 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: "HireSense - AI-Powered Recruitment Platform",
+    des: "Developed an intelligent recruitment platform leveraging AI for automated candidate screening, resume parsing, and skill matching with secure authentication and role-based access control.",
+    img: "images/projects/hiresense.png",
+    icons: [
+      { icon: SiMongodb, color: "#47A248" },  // MongoDB
+      { icon: SiExpress, color: "#000000" },  // Express.js
+      { icon: FaReact, color: "#61DAFB" },  // React.js
+      { icon: SiNodedotjs, color: "#339933" },  // Node.js
+    ],
+    link: "https://hire-sense-zeta.vercel.app",
+  },
+  {
+    id: 2,
     title: "EduTrack - Smart School Management System",
     des: "Developed a scalable MERN application to manage student attendance, performance, and feedback with role-based access control and interactive dashboards, serving 100+ students.",
     img: "images/projects/project1.jpg",
@@ -102,7 +115,7 @@ export const projects = [
     link: "https://edu-track-iota.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Smart Inventory Tracker",
     des: "Programmed predictive ML models for inventory restocking with 15% improved forecast accuracy. Configured event notifications via MQTT and validated inputs from 50+ IoT sensors.",
     img: "images/projects/project2.png",
@@ -115,7 +128,7 @@ export const projects = [
     link: "https://github.com/Aanjaneya24/Smart_Inventory_Tracker",
   },
   {
-    id: 3,
+    id: 4,
     title: "SmartSched - Task Management App",
     des: "Devised a scalable task management app for 100+ users with interactive dashboards, seamless backend API integration, and 30+ validated workflows ensuring reliability.",
     img: "images/projects/project3.png",

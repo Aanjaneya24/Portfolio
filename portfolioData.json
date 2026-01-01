@@ -42,6 +42,19 @@
   ],
   "projects": [
     {
+      "name": "HireSense - AI-Powered Recruitment Platform",
+      "tech": ["MongoDB", "Express.js", "React.js", "Node.js", "AI/ML", "REST APIs"],
+      "github": "https://github.com/Aanjaneya24/HireSense",
+      "live": "https://hire-sense-zeta.vercel.app",
+      "backend": "https://hiresense-backend-xuwm.onrender.com",
+      "description": [
+        "Developed an intelligent recruitment platform leveraging AI to streamline the hiring process with automated candidate screening.",
+        "Built full-stack MERN application with RESTful APIs, implementing secure authentication and role-based access control.",
+        "Integrated machine learning algorithms for resume parsing, skill matching, and candidate ranking to optimize recruitment efficiency.",
+        "Deployed scalable application on Vercel (frontend) and Render (backend) with MongoDB Atlas for cloud database management."
+      ]
+    },
+    {
       "name": "EduTrack - School Management System",
       "tech": ["MongoDB", "Express.js", "React.js", "Node.js", "Material-UI", "Redux"],
       "github": "https://github.com/Aanjaneya24/EduTrack",
