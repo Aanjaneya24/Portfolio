@@ -143,11 +143,12 @@ export const projects = [
 ];
 
 export const achievements = [
-  "Solved 400+ DSA problems on LeetCode and GeeksforGeeks, enhancing analytical and coding skills.",
-  "Cleared two coding rounds of Flipkart GRiD 7.0 and shortlisted as a semifinalist.",
-  "Advanced through two rounds of the Adobe Hackathon, showcasing algorithmic and problem-solving ability.",
-  "Secured a perfect 10.0 SGPA in the first year of B.Tech, reflecting academic excellence and consistency.",
-  "Achieved 98.6 percentile in JEE Mains (Top 1.4% of 1M+ candidates), demonstrating strong quantitative skills."
+  "Active competitive programmer with 500+ problems solved across LeetCode, GeeksforGeeks, and Codeforces, demonstrating strong algorithmic thinking and problem-solving expertise.",
+  "Consistent Codeforces participant with regular contest participation, specializing in data structures, algorithms, and optimization techniques.",
+  "Semifinalist in Flipkart GRiD 7.0 among thousands of participants, clearing multiple rigorous coding rounds showcasing algorithmic proficiency.",
+  "Advanced through two competitive rounds of Adobe Hackathon, demonstrating innovative problem-solving and software development skills.",
+  "Achieved perfect 10.0 SGPA in first year of B.Tech at NIT Delhi, reflecting exceptional academic excellence and strong foundation in core engineering concepts.",
+  "Secured 98.6 percentile in JEE Mains (Top 1.4% among 1M+ candidates), demonstrating outstanding quantitative aptitude and analytical reasoning."
 ];
 
 export const positions = [

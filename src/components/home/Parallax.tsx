@@ -2,7 +2,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiCodeforces } from "react-icons/si";
 import { Playfair_Display, Space_Grotesk } from 'next/font/google';
 import { useTheme } from 'next-themes';
 import { ContinuousTypewriter } from "../ui/continuous-typewriter";
@@ -67,9 +67,12 @@ const Parallax = () => {
   });
 
   // Create all transforms outside of render
+  // Separate positioning for moon (dark mode) - lower to avoid icon overlap
   const celestialY = useTransform(scrollYProgress, 
     [0, 0.4], 
-    isMobile ? ["400%", "30%"] : ["330%", "50%"]
+    isDark 
+      ? (isMobile ? ["450%", "40%"] : ["380%", "65%"])
+      : (isMobile ? ["400%", "30%"] : ["330%", "50%"])
   );
   
   const mountainY = useTransform(scrollYProgress, 
@@ -287,6 +290,16 @@ const Parallax = () => {
             className="p-2.5 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
           >
             <SiLeetcode className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+          </motion.a>
+          <motion.a
+            href="https://codeforces.com/profile/Aanjaneya24"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="p-2.5 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          >
+            <SiCodeforces className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </motion.a>
         </div>
       </motion.div>
