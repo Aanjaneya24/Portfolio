@@ -142,17 +142,16 @@ export default function About() {
               Software and AI Developer 
             </motion.h3>
 
-            <motion.p 
+            <motion.p
               className="text-lg text-zinc-700 dark:text-zinc-300 max-w-xl leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              I&apos;m a passionate B.Tech student at NIT Delhi specializing in Software Development and Artificial Intelligence,
-              with a keen interest in embedded systems and intelligent automation.
+             I&apos;m a passionate final-year Electronics &amp; Communication Engineering student at NIT Delhi, pursuing a Minor in AI &amp; ML,
+              with a keen interest in backend systems, intelligent automation and embedded systems.
               I focus on designing data-driven, efficient, and scalable applications that merge innovation with real-world use.
-              Curious and driven, I aim to create smart technologies that connect AI, code, and meaningful impact.
-            </motion.p>
+              Curious and driven, I aim to create smart technologies that connect AI, code, and meaningful impact.</motion.p>
 
             <motion.div
               className="flex flex-wrap gap-4"

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { FaReact, FaAws, FaMoneyCheckAlt, FaExchangeAlt, FaCloud, FaAndroid, FaMicrochip, FaPython, FaRaspberryPi, FaTasks, FaStripeS } from "react-icons/fa";
 import { FaJava } from 'react-icons/fa6';
-import { SiSpringboot, SiMysql, SiTypescript, SiMongodb, SiNextdotjs, SiChartdotjs, SiTailwindcss, SiAppwrite, SiNodedotjs, SiExpress, SiPostgresql, SiPrisma, SiSpring, SiPostman, SiHibernate, SiGithub, SiSwift, SiFirebase, SiXcode, SiDjango, SiReact } from "react-icons/si";
+import { SiSpringboot, SiMysql, SiTypescript, SiMongodb, SiNextdotjs, SiChartdotjs, SiTailwindcss, SiAppwrite, SiNodedotjs, SiExpress, SiPostgresql, SiPrisma, SiSpring, SiPostman, SiHibernate, SiGithub, SiSwift, SiFirebase, SiXcode, SiDjango, SiReact, SiFastapi, SiRedis, SiRabbitmq, SiOpencv } from "react-icons/si";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -52,19 +52,17 @@ export const generateMetadata = (path: string): Metadata => {
 
 export const experiences = [
   {
-    title: "Embedded Systems & AI Research Intern",
-    company: "IIT (BHU), Varanasi",
+    title: "Software Research Intern",
+    company: "Indian Institute of Technology (BHU), Varanasi",
     location: "Varanasi, India",
     type: "Research Internship",
     date: "June 2025 – July 2025",
     department: "Department of Computer Science and Engineering",
     link: "https://github.com/Aanjaneya24/Research_Internship_IITBHU",
     points: [
-      "Engineered a secure IoT communication stack (LoRaWAN on nRF54L15 & SX1261), improving network efficiency by 30%.",
-      "Developed and optimized low-level drivers in C (Zephyr RTOS) and integrated with APIs, enhancing system reliability by 20%.",
-      "Architected secure OTAA-based authentication and optimized transmission algorithms, extending wireless range beyond 500m.",
-      "Applied principles of software optimization and algorithmic efficiency to embedded systems development, improving scalability and performance.",
-      "Designed a novel data transmission protocol and devised validation setups across macOS, Windows, and Linux."
+      "Built low-level communication drivers in C on Zephyr RTOS; developed a cross-platform benchmarking framework across 3 operating systems for automated performance testing.",
+      "Benchmarked LoRaWAN communication stack across 3+ hardware configurations, improving network efficiency by 30% via data-driven parameter tuning.",
+      "Applied probabilistic modelling to evaluate communication reliability under varying network conditions, boosting system reliability by 20%."
     ],
     skills: ["C", "Zephyr RTOS", "LoRaWAN", "IoT", "Embedded Systems", "nRF54L15", "SX1261"],
   },
@@ -75,8 +73,8 @@ export const education = [
     title: "B.Tech in Electronics and Communication Engineering with Minor in AI & ML",
     institution: "National Institute of Technology Delhi",
     location: "New Delhi, India",
-    date: "Graduating 2027",
-    grade: "CGPA: 9.0/10"
+    date: "Expected May 2027",
+    grade: "CGPA: 8.80/10"
   },
   {
     title: "Senior Secondary",
@@ -140,15 +138,72 @@ export const projects = [
     ],
     link: "https://github.com/Aanjaneya24/SmartSched",
   },
+  {
+    id: 5,
+    title: "NextFlow - Visual AI Workflow Automation",
+    des: "Architected a visual AI workflow automation platform with a React Flow canvas, drag-and-drop construction, and a DAG-based execution engine unifying 5 LLM providers behind a single execution layer.",
+    highlights: [
+      "React Flow canvas with 4 reusable node types and live execution tracking.",
+      "DAG-based execution engine resolving dependencies and running independent nodes in parallel.",
+      "Unified Groq, OpenAI, Gemini, Claude, and Ollama via PostgreSQL + Prisma persistence and Docker orchestration."
+    ],
+    img: "images/projects/nextflow.png",
+    icons: [
+      { icon: SiNextdotjs, color: "#000000" },  // Next.js
+      { icon: SiTypescript, color: "#3178C6" },  // TypeScript
+      { icon: SiPrisma, color: "#2D3748" },  // Prisma
+      { icon: SiPostgresql, color: "#4169E1" },  // PostgreSQL
+    ],
+    link: "https://nextflow-7jvu.onrender.com",
+  },
+  {
+    id: 6,
+    title: "Rayvex - AI Revenue-Recovery Agent",
+    des: "Built an AI revenue-recovery agent with a deterministic state machine and a 12-rule policy engine overriding LLM-proposed actions, verifying recovery only through independent payment-state confirmation.",
+    highlights: [
+      "LangChain tool-calling agent with 10+ structured tools making schema-validated, expected-value-based decisions.",
+      "12-rule policy engine overriding LLM-proposed actions on top of FastAPI, PostgreSQL, Redis, and RabbitMQ.",
+      "Benchmarked against a naive-retry baseline on 5,000+ synthetic cases, validated by 200+ automated tests."
+    ],
+    img: "images/projects/rayvex.jpg",
+    icons: [
+      { icon: SiFastapi, color: "#009688" },  // FastAPI
+      { icon: SiPostgresql, color: "#4169E1" },  // PostgreSQL
+      { icon: SiRedis, color: "#DC382D" },  // Redis
+      { icon: SiRabbitmq, color: "#FF6600" },  // RabbitMQ
+    ],
+    link: "https://github.com/Aanjaneya24/Rayvex",
+  },
+  {
+    id: 7,
+    title: "IntruSight - Real-Time AI Video Analytics",
+    des: "Engineered a real-time AI video analytics platform for 4 concurrent camera streams with live monitoring, event playback, and analytics dashboards.",
+    highlights: [
+      "4-stage detection pipeline — MOG2 gating, YOLOv8 classification, zone filtering, dwell-time verification.",
+      "Cut false alarms by 91%, from 878 raw triggers to 78 confirmed events.",
+      "Multi-threaded per-camera capture with FastAPI WebSockets and SQLite-backed persistence."
+    ],
+    img: "images/projects/intrusight.jpg",
+    icons: [
+      { icon: FaPython, color: "#3776AB" },  // Python
+      { icon: SiFastapi, color: "#009688" },  // FastAPI
+      { icon: FaReact, color: "#61DAFB" },  // React.js
+      { icon: SiOpencv, color: "#5C3EE8" },  // OpenCV
+    ],
+    link: "https://github.com/Aanjaneya24/IntruSight",
+  },
 ];
 
 export const achievements = [
-  "Active competitive programmer with 500+ problems solved across LeetCode, GeeksforGeeks, and Codeforces, demonstrating strong algorithmic thinking and problem-solving expertise.",
-  "Consistent Codeforces participant with regular contest participation, specializing in data structures, algorithms, and optimization techniques.",
+  "Semifinalist, Flipkart GRiD 8.0 (AI Engineering Track), advancing through multiple national-level coding rounds.",
+  "Advanced to Round 2 of Google BigCode Contest, ranking among the top 1,500 participants globally.",
+  "Secured Rank #1 in NxtWave Code Combat, outperforming 1000+ participants nationally.",
   "Semifinalist in Flipkart GRiD 7.0 among thousands of participants, clearing multiple rigorous coding rounds showcasing algorithmic proficiency.",
   "Advanced through two competitive rounds of Adobe Hackathon, demonstrating innovative problem-solving and software development skills.",
-  "Achieved perfect 10.0 SGPA in first year of B.Tech at NIT Delhi, reflecting exceptional academic excellence and strong foundation in core engineering concepts.",
-  "Secured 98.6 percentile in JEE Mains (Top 1.4% among 1M+ candidates), demonstrating outstanding quantitative aptitude and analytical reasoning."
+  "Solved 700+ DSA problems across platforms; achieved Guardian (2,603 rating, top 0.1%) on LeetCode.",
+  "Consistent Codeforces participant with regular contest participation, specializing in data structures, algorithms, and optimization techniques.",
+  "Secured 98.6 percentile in JEE Mains (Top 1.4% among 1M+ candidates), demonstrating outstanding quantitative aptitude and analytical reasoning.",
+  "Achieved perfect 10.0 SGPA in first year of B.Tech at NIT Delhi, reflecting exceptional academic excellence."
 ];
 
 export const positions = [

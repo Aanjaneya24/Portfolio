@@ -2,7 +2,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaJs, FaPython, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaDatabase, FaCode, FaChartBar } from "react-icons/fa";
-import { SiCplusplus, SiC, SiExpress, SiTailwindcss, SiMongodb, SiPostman, SiNumpy, SiPandas } from "react-icons/si";
+import { SiCplusplus, SiC, SiExpress, SiTailwindcss, SiMongodb, SiPostman, SiNumpy, SiPandas, SiTypescript, SiNextdotjs, SiFastapi, SiPostgresql, SiRedis, SiPrisma, SiAmazonaws } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { useTheme } from "next-themes";
 
@@ -31,6 +31,15 @@ const skills = {
     { title: "NumPy", icon: SiNumpy, color: "#013243" },
     { title: "Pandas", icon: SiPandas, color: "#150458" },
     { title: "Data Viz", icon: FaChartBar, color: "#11557C" },
+  ],
+  row5: [
+    { title: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+    { title: "Next.js", icon: SiNextdotjs, color: "#000000", darkColor: "#FFFFFF" },
+    { title: "FastAPI", icon: SiFastapi, color: "#009688" },
+    { title: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    { title: "Redis", icon: SiRedis, color: "#DC382D" },
+    { title: "Prisma", icon: SiPrisma, color: "#2D3748", darkColor: "#FFFFFF" },
+    { title: "AWS", icon: SiAmazonaws, color: "#FF9900" },
   ],
 };
 
@@ -140,6 +149,24 @@ export const SkillsParallax = () => {
                   key={skill.title}
                   {...skill}
                   translate={translateXReverse}
+                />
+              ))}
+            </motion.div>
+            {/* Row 5 */}
+            <motion.div
+              style={{
+                rotateX,
+                rotateZ,
+                translateY,
+                opacity,
+              }}
+              className="flex flex-row-reverse gap-4 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-8 justify-start md:justify-center"
+            >
+              {skills.row5.map((skill) => (
+                <SkillCard
+                  key={skill.title}
+                  {...skill}
+                  translate={translateX}
                 />
               ))}
             </motion.div>
