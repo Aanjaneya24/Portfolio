@@ -43,10 +43,6 @@ export function AllProjects(): JSX.Element {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
-  const handleProjectClick = (link: string): void => {
-    window.open(link, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <div className="py-24 bg-white dark:bg-black" id="projects">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,11 +68,13 @@ export function AllProjects(): JSX.Element {
           viewport={{ once: true }}
         >
           {projects.map((project: Project) => (
-            <motion.div 
-              key={project.id} 
+            <motion.a
+              key={project.id}
               variants={itemVariants}
-              className="w-full cursor-pointer"
-              onClick={() => handleProjectClick(project.link)}
+              className="w-full cursor-pointer block"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <CardContainer>
                 <CardBody className="relative w-full h-auto bg-white dark:bg-neutral-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 flex flex-col group/card hover:border-purple-500/50 transition-colors">
@@ -152,7 +150,7 @@ export function AllProjects(): JSX.Element {
                   </div>
                 </CardBody>
               </CardContainer>
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
 
