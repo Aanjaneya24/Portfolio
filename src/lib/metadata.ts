@@ -142,11 +142,6 @@ export const projects = [
     id: 5,
     title: "NextFlow - Visual AI Workflow Automation",
     des: "Architected a visual AI workflow automation platform with a React Flow canvas, drag-and-drop construction, and a DAG-based execution engine unifying 5 LLM providers behind a single execution layer.",
-    highlights: [
-      "React Flow canvas with 4 reusable node types and live execution tracking.",
-      "DAG-based execution engine resolving dependencies and running independent nodes in parallel.",
-      "Unified Groq, OpenAI, Gemini, Claude, and Ollama via PostgreSQL + Prisma persistence and Docker orchestration."
-    ],
     img: "images/projects/nextflow.png",
     icons: [
       { icon: SiNextdotjs, color: "#000000" },  // Next.js
@@ -160,11 +155,6 @@ export const projects = [
     id: 6,
     title: "Rayvex - AI Revenue-Recovery Agent",
     des: "Built an AI revenue-recovery agent with a deterministic state machine and a 12-rule policy engine overriding LLM-proposed actions, verifying recovery only through independent payment-state confirmation.",
-    highlights: [
-      "LangChain tool-calling agent with 10+ structured tools making schema-validated, expected-value-based decisions.",
-      "12-rule policy engine overriding LLM-proposed actions on top of FastAPI, PostgreSQL, Redis, and RabbitMQ.",
-      "Benchmarked against a naive-retry baseline on 5,000+ synthetic cases, validated by 200+ automated tests."
-    ],
     img: "images/projects/rayvex.jpg",
     icons: [
       { icon: SiFastapi, color: "#009688" },  // FastAPI
@@ -178,11 +168,6 @@ export const projects = [
     id: 7,
     title: "IntruSight - Real-Time AI Video Analytics",
     des: "Engineered a real-time AI video analytics platform for 4 concurrent camera streams with live monitoring, event playback, and analytics dashboards.",
-    highlights: [
-      "4-stage detection pipeline — MOG2 gating, YOLOv8 classification, zone filtering, dwell-time verification.",
-      "Cut false alarms by 91%, from 878 raw triggers to 78 confirmed events.",
-      "Multi-threaded per-camera capture with FastAPI WebSockets and SQLite-backed persistence."
-    ],
     img: "images/projects/intrusight.jpg",
     icons: [
       { icon: FaPython, color: "#3776AB" },  // Python
