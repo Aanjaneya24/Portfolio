@@ -52,6 +52,18 @@ export const generateMetadata = (path: string): Metadata => {
 
 export const experiences = [
   {
+    title: "Software Engineering Intern",
+    company: "Apiva AI, KITEJOBS Pvt. Ltd.",
+    location: "India",
+    type: "Internship",
+    date: "May 2026 – August 2026",
+    points: [
+      "Developed and debugged backend workflows for an automated application pipeline processing 100+ applications/day, implementing 6-stage state management, retry handling, and input validation that reduced recurring workflow failures by approximately 20%.",
+      "Collaborated with the team and helped building 5+ internal APIs and logging utilities for application tracking and failure diagnosis, reducing average debugging time by approximately 30%."
+    ],
+    skills: ["Node.js", "REST APIs", "Backend Development", "Workflow Automation", "Logging & Monitoring"],
+  },
+  {
     title: "Software Research Intern",
     company: "Indian Institute of Technology (BHU), Varanasi",
     location: "Varanasi, India",
@@ -60,9 +72,8 @@ export const experiences = [
     department: "Department of Computer Science and Engineering",
     link: "https://github.com/Aanjaneya24/Research_Internship_IITBHU",
     points: [
-      "Built low-level communication drivers in C on Zephyr RTOS; developed a cross-platform benchmarking framework across 3 operating systems for automated performance testing.",
-      "Benchmarked LoRaWAN communication stack across 3+ hardware configurations, improving network efficiency by 30% via data-driven parameter tuning.",
-      "Applied probabilistic modelling to evaluate communication reliability under varying network conditions, boosting system reliability by 20%."
+      "Built low-level communication drivers in C on Zephyr RTOS; developed a cross-platform benchmarking framework across 3 operating systems and 3+ hardware configurations.",
+      "Applied data-driven tuning and probabilistic modelling to LoRaWAN communication, improving network efficiency by 30% and reliability by 20%."
     ],
     skills: ["C", "Zephyr RTOS", "LoRaWAN", "IoT", "Embedded Systems", "nRF54L15", "SX1261"],
   },
@@ -180,15 +191,15 @@ export const projects = [
 ];
 
 export const achievements = [
-  "Semifinalist, Flipkart GRiD 8.0 (AI Engineering Track), advancing through multiple national-level coding rounds.",
+  "Semifinalist, Flipkart GRiD 8.0 (AI Engineering), advancing through multiple national-level coding rounds.",
   "Advanced to Round 2 of Google BigCode Contest, ranking among the top 1,500 participants globally.",
-  "Secured Rank #1 in NxtWave Code Combat, outperforming 1000+ participants nationally.",
+  "Secured Rank #1 in NxtWave Code Combat, outperforming 10000+ participants nationally.",
   "Semifinalist in Flipkart GRiD 7.0 among thousands of participants, clearing multiple rigorous coding rounds showcasing algorithmic proficiency.",
   "Advanced through two competitive rounds of Adobe Hackathon, demonstrating innovative problem-solving and software development skills.",
-  "Solved 700+ DSA problems across platforms; achieved Guardian (2,603 rating, top 0.1%) on LeetCode.",
+  "Solved 700+ DSA problems across platforms; achieved Guardian (2,603 rating) on LeetCode.",
   "Consistent Codeforces participant with regular contest participation, specializing in data structures, algorithms, and optimization techniques.",
   "Secured 98.6 percentile in JEE Mains (Top 1.4% among 1M+ candidates), demonstrating outstanding quantitative aptitude and analytical reasoning.",
-  "Achieved perfect 10.0 SGPA in first year of B.Tech at NIT Delhi, reflecting exceptional academic excellence."
+  "Secured a perfect 10.0 SGPA in first year of B.Tech, reflecting strong academic consistency."
 ];
 
 export const positions = [
