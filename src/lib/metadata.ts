@@ -70,7 +70,6 @@ export const experiences = [
     type: "Research Internship",
     date: "June 2025 – July 2025",
     department: "Department of Computer Science and Engineering",
-    link: "https://github.com/Aanjaneya24/Research_Internship_IITBHU",
     points: [
       "Built low-level communication drivers in C on Zephyr RTOS; developed a cross-platform benchmarking framework across 3 operating systems and 3+ hardware configurations.",
       "Applied data-driven tuning and probabilistic modelling to LoRaWAN communication, improving network efficiency by 30% and reliability by 20%."
